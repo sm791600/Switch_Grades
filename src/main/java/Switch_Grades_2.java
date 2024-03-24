@@ -15,31 +15,31 @@ public class Switch_Grades_2 {
 		int  ocena;
 		Scanner vnes = new Scanner(System.in);
 		
-		System.out.println("Vnesi maksimum mozen broj poeni\n");
+		System.out.println("Vnesi maksimum mozen broj poeni");
 		mP=vnes.nextInt();
-		System.out.println(" Vnesi osvoeni poeni");
+		System.out.println("Vnesi osvoeni poeni");
 		oP=vnes.nextInt();
 		
 		procent=(oP/mP)*100;
 		ocena = (int)Math.ceil(procent/10.0);
-		System.out.println("mP= "+mP+" oP="+oP+" procent= "+procent+", ocena = "+ocena+"\n");
+		System.out.println("mP= "+mP+" oP="+oP+" procent= "+procent+", ocena = "+ocena+"\n\n");
 		switch(ocena) {
 		
 		
 		case 10:
-			System.out.println("Studentot dobil 10 so "+(int)procent+" bodovi\n");
+			System.out.println("Studentot dobil 10 so "+procent+" bodovi\n");
 			break;
 		case 9:
-			System.out.println("Studentot dobil 9 so "+(int)procent+" bodovi\n");
+			System.out.println("Studentot dobil 9 so "+procent+" bodovi\n");
 			break;
 		case 8:
-			System.out.println("Studentot dobil 8 so "+(int)procent+" bodovi\n");
+			System.out.println("Studentot dobil 8 so "+procent+" bodovi\n");
 			break;
 		case 7:
-			System.out.println("Studentot dobil 7 so "+(int)procent+" bodovi\n");
+			System.out.println("Studentot dobil 7 so "+procent+" bodovi\n");
 			break;
 		case 6:
-			System.out.println("Studentot dobil 6 so "+(int)procent+" bodovi\n");
+			System.out.println("Studentot dobil 6 so "+procent+" bodovi\n");
 			break;
 		default:
 			System.out.println("Studentot padnal\n");
